@@ -5,11 +5,12 @@ import { NavbarComponent } from './paginas/navbar/navbar.component';
 import { BannerComponent } from './paginas/banner/banner.component';
 import { PrincipalComponent } from './paginas/principal/principal.component';
 import { Productos1Component } from './paginas/productos-1/productos-1.component';
+import { EntradasComponent } from './paginas/entradas/entradas.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FooterComponent,NavbarComponent,BannerComponent,PrincipalComponent,Productos1Component],
+  imports: [RouterOutlet,FooterComponent,NavbarComponent,BannerComponent,PrincipalComponent,Productos1Component,EntradasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
