@@ -7,6 +7,8 @@ import { PagInicioSesionComponent } from './paginas/pag-inicio-sesion/pag-inicio
 import { PagPagoComponent } from './paginas/pag-pago/pag-pago.component';
 import { PagCarritoComponent } from './paginas/pag-carrito/pag-carrito.component';
 import { PageNotFoundComponent } from './paginas/page-not-found/page-not-found.component';
+import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     //Routes - NO TOCAR
