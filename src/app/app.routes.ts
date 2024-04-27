@@ -19,7 +19,7 @@ export const routes: Routes = [
     {path: "carrito", title:"Tu carrito",component: PagCarritoComponent},
 
 
-        //ULTIMAS RUTAS SIEMPRE
+    //ULTIMAS RUTAS SIEMPRE
     {path: "", redirectTo: "/home", pathMatch: "full"},
     {path: "##", component: PageNotFoundComponent}
 
