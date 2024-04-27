@@ -8,7 +8,8 @@ import { ConPresentacionComponent } from '../con-presentacion/con-presentacion.c
 @Component({
   selector: 'app-pag-contacto',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive,NavbarComponent,FooterComponent,ConFormularioComponent,ConPresentacionComponent],
+  imports: [RouterLink,RouterLinkActive,NavbarComponent,FooterComponent,ConFormularioComponent,ConPresentacionComponent
+  ],
   templateUrl: './pag-contacto.component.html',
   styleUrl: './pag-contacto.component.css'
 })
