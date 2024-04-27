@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compra</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" style="padding-bottom: 20px;">
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Silver Pass</td>
+          <td>$45</td>
+          <td>1</td>
+          <td>$45</td>
+        </tr>
+        <tr>
+          <td>Camiseta</td>
+          <td>$50</td>
+          <td>2</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Mochila</td>
+          <td>$80</td>
+          <td>1</td>
+          <td>$80</td>
+        </tr>
+        <tr>
+          <td>Cantimplora</td>
+          <td>$30</td>
+          <td>1</td>
+          <td>$30</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3" class="text-right">Total</th>
+          <th>$255</th>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary">Ir a Pagar</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
