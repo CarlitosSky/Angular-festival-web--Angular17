@@ -1,0 +1,19 @@
+
+    <div class="row justitfy-content-center" style="background-color: bisque; padding-left: 120px;">
+        
+        
+       
+          <div class="col-md-4" *ngFor="let product of products; track:$index">
+
+            <div class="" style="width: 18rem;">
+                <div class="p-3" style="height: 300px; overflow: hidden;"> <img [src]="product.imagen" class="card-img-top" alt="..."></div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">{{product.titulo}}</h5>
+                  <p class="card-text">{{product.descripcion}}</p>
+                  <a href="#" class="btn btn-primary" routerLink="/productos" routerLinkActive="active">{{product.boton}}</a>
+                </div>
+              </div>
+          </div>
+    </div>
+

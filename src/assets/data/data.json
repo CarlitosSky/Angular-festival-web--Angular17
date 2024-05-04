@@ -1,0 +1,23 @@
+{
+  "products":[
+    {
+      "imagen": "assets/imagenes/sudadera png.png",
+      "titulo": "Sudadera Progresa Fest",
+      "descripcion": "Edicion 1.0",
+      "boton": "Ver detalles"
+    },
+    {
+      "imagen": "assets/imagenes/camiseta.png",
+      "titulo": "Camiseta Progresa Fest",
+      "descripcion": "Edicion 1.0",
+      "boton": "Ver detalles"
+    },
+    {
+      "imagen": "assets/imagenes/mochila.png",
+      "titulo": "Mochila Progresa Fest",
+      "descripcion": "Edicion 1.0",
+      "boton": "Ver detalles"
+    }
+  ]
+  
+}

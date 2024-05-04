@@ -4,11 +4,12 @@ import { EntradasComponent } from '../entradas/entradas.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CantantesComponent } from '../cantantes/cantantes.component';
 import { Productos1Component } from '../productos-1/productos-1.component';
+import { EntradasAutoComponent } from '../entradas-auto/entradas-auto.component';
 
 @Component({
   selector: 'app-principal',
   standalone: true,
-  imports: [RouterOutlet, EntradasComponent,FooterComponent,CantantesComponent,Productos1Component],
+  imports: [RouterOutlet, EntradasComponent,FooterComponent,CantantesComponent,Productos1Component,EntradasAutoComponent],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css'
 })
