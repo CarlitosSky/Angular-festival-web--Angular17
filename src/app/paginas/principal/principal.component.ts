@@ -6,11 +6,12 @@ import { CantantesComponent } from '../cantantes/cantantes.component';
 import { Productos1Component } from '../productos-1/productos-1.component';
 import { EntradasAutoComponent } from '../entradas-auto/entradas-auto.component';
 import { PruebaEdyComponent } from '../pruebaEdy/pruebaEdy.component';
+import { CantanteAutoComponent } from '../cantanteAuto/cantanteAuto.component';
 
 @Component({
   selector: 'app-principal',
   standalone: true,
-  imports: [RouterOutlet, EntradasComponent,FooterComponent,CantantesComponent,Productos1Component,EntradasAutoComponent,PruebaEdyComponent],
+  imports: [RouterOutlet, EntradasComponent,FooterComponent,CantantesComponent,Productos1Component,EntradasAutoComponent,PruebaEdyComponent,CantanteAutoComponent],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css'
 })

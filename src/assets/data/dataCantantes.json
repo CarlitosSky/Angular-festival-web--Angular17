@@ -1,0 +1,16 @@
+{
+  "cantantes":[
+    {
+      "imagen": "assets/imagenes/rauw.jpg",
+      "nombre": "Rauw alejandro"
+    },
+    {
+      "imagen": "assets/imagenes/rosalia.jpg",
+      "nombre": "Rosalia"
+    },
+    {
+      "imagen": "assets/imagenes/sjakira.jpg",
+      "nombre": "Shakira"
+    }
+  ]
+}

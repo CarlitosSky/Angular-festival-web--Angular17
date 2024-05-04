@@ -1,4 +1,4 @@
-import { Entradas } from './../../common/entradas';
+import { Entradas } from '../../common/entradas';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DataService } from '../../data/data.service';
@@ -15,7 +15,7 @@ import { DataEntradasService } from '../../data/data-entradas.service';
         <div class="" style="height:230px; width:auto; overflow: hidden;">
           <img [src]="e.imagen" class="card-img-top" alt="..." />
         </div>
-        <div class="card- ps-3">
+        <div class="card- ps-3" style="padding-bottom: 50px;">
           <h4 class="card-title">{{ e.titulo }}</h4>
           <p class="card-text">{{ e.descripcion }}</p>
           <button class="btn-sm btn btn-primary">{{ e.botonTxt }}</button>
