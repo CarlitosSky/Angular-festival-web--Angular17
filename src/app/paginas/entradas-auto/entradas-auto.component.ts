@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataService } from '../../data/data.service';
 import { productos } from '../../common/productos';
 import { HttpClientModule,HttpClient } from '@angular/common/http';
@@ -10,12 +10,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [CommonModule,RouterLink,RouterLinkActive],
   templateUrl: './entradas-auto.component.html',
-  styleUrl: './entradas-auto.component.css'
+  styleUrl: './entradas-auto.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntradasAutoComponent implements OnInit {
 products: productos[] = [];
 
-constructor(private dataService: DataService){}
+constructor(private dataService: DataService,private cdRef:ChangeDetectorRef){}
 
 ngOnInit(): void {
   this.loadproductos();
@@ -26,6 +27,7 @@ loadproductos(){
       next: (data) =>{
         console.log(data)
         this.products = data.products
+        this.cdRef.detectChanges();
       },
       error: err => {
         console.log(err)

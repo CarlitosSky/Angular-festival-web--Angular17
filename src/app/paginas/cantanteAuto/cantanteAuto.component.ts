@@ -1,6 +1,6 @@
 import { Cantantes } from './../../common/cantantes';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataCantantesService } from '../../data/data-cantantes.service';
 
 @Component({
@@ -32,7 +32,7 @@ export class CantanteAutoComponent implements OnInit {
   //variables generales
   cantantes: Cantantes[] = [];
 
-  constructor(private _dataservice: DataCantantesService) {}
+  constructor(private _dataservice: DataCantantesService,private cdRef:ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.cargarCantantes();
@@ -42,6 +42,7 @@ export class CantanteAutoComponent implements OnInit {
     this._dataservice.getCantantes().subscribe((res: any) => {
       if (res) {
         this.cantantes = res.cantantes;
+        this.cdRef.detectChanges();
         console.log('res :>> ', this.cantantes);
       } else {
         console.log('error');

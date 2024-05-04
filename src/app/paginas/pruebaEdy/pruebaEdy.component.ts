@@ -1,6 +1,6 @@
 import { Entradas } from '../../common/entradas';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataService } from '../../data/data.service';
 import { DataEntradasService } from '../../data/data-entradas.service';
 
@@ -34,7 +34,7 @@ export class PruebaEdyComponent implements OnInit {
   //variables globales
   entradas: Entradas[] = [];
 
-  constructor(private _dataService: DataEntradasService) {}
+  constructor(private _dataService: DataEntradasService,private cdRef:ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.cargarEntradas();
@@ -44,6 +44,7 @@ export class PruebaEdyComponent implements OnInit {
     this._dataService.getEntradas().subscribe((res: any) => {
       if (res) {
         this.entradas = res.entradas;
+        this.cdRef.detectChanges();
         console.log('res :>> ', this.entradas);
       } else {
         console.log('error');

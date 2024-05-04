@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { EntradasComponent } from '../entradas/entradas.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -13,8 +13,15 @@ import { CantanteAutoComponent } from '../cantanteAuto/cantanteAuto.component';
   standalone: true,
   imports: [RouterOutlet, EntradasComponent,FooterComponent,CantantesComponent,Productos1Component,EntradasAutoComponent,PruebaEdyComponent,CantanteAutoComponent],
   templateUrl: './principal.component.html',
-  styleUrl: './principal.component.css'
+  styleUrl: './principal.component.css',
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
-export class PrincipalComponent {
+export class PrincipalComponent implements OnInit {
+
+  constructor(private cdRef:ChangeDetectorRef){}
+  ngOnInit():void {
+    this.cdRef.detectChanges();
+  }
+
 
 }
