@@ -1,0 +1,39 @@
+{
+  "productos":[
+    {
+      "imagen": "assets/imagenes/sudadera.png",
+      "Titulo": "Sudadera Progresa Fest",
+      "descripcion": "Celebra el espíritu festivo con nuestra sudadera de festival. Diseñada para brindarte comodidad y estilo durante tus eventos favoritos. Esta sudadera es perfecta para escuchar a tus artistas favoritos durante las noches de festival.",
+      "precio":"39.99",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/camiseta.png",
+      "Titulo": "Camiseta Progresa Fest",
+      "descripcion": "Con la camiseta de Progresa Fest, estarás listo para sumergirte en la experiencia de este festiva y expresar tu amor por los artistas y la cultura festiva. ¡Lleva contigo la buena vibra allá donde vayas!",
+      "precio":"27.99",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/mochila.png",
+      "Titulo": "Mochila Porgresa Fest",
+      "descripcion": "Mochila que tien estar entre indispensables para este festival. Perfecta para poder transportar todos tus objetos tanto en el festival como en dia de tu vida.",
+      "precio":"50.99",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/gorrapng.png",
+      "Titulo": "Gorra Porgresa Fest",
+      "descripcion": "Gorra que tien estar entre indispensables para este festival. Perfecta para poder protegerte del sol tanto en el festival como en dia de tu vida.",
+      "precio":"20.99",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/botellapng.png",
+      "Titulo": "Botella Porgresa Fest",
+      "descripcion": "La botella del festival es tu compañera perfecta para mantener la hidratación y la sostenibilidad mientras disfrutas de tus festivales favoritos. Diseñada pensando en la movilidad y el respeto por el medio ambiente, esta botella ofrece estilo y funcionalidad.",
+      "precio":"20.99",
+      "botonTxt": "Comprar"
+    }
+  ]
+}

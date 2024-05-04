@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    //Routes - NO 
+    //Routes - NO
     {path: "", redirectTo: "/home", pathMatch: "full"},
     {path: "home", title:"Home",component: PrincipalComponent},
     {path: "productos", title:"Productos",component: PagProductosComponent},
@@ -23,7 +23,7 @@ export const routes: Routes = [
 
 
     //ULTIMAS RUTAS SIEMPRE
-    
+
     {path: "**", component: PageNotFoundComponent}
 
 ];
