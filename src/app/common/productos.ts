@@ -4,5 +4,4 @@ export interface productos {
   descripcion: string
   boton: string
   }
-  
-  
+

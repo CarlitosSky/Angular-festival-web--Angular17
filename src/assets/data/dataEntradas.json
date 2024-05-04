@@ -1,0 +1,22 @@
+{
+  "entradas":[
+    {
+      "imagen": "assets/imagenes/silver pass.png",
+      "titulo": "Silver Pass",
+      "descripcion": "1 unidad de bebida",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/BRONZE pass.png",
+      "titulo": "Brozen Pass",
+      "descripcion": "2 unidades de bebidas",
+      "botonTxt": "Comprar"
+    },
+    {
+      "imagen": "assets/imagenes/golden pass.png",
+      "titulo": "Golden Pass",
+      "descripcion": "3 unidades de bebida y sala vip",
+      "botonTxt": "Comprar"
+    }
+  ]
+}
