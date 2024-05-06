@@ -2,12 +2,15 @@ import { Cantantes } from './../../common/cantantes';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataCantantesService } from '../../data/data-cantantes.service';
+import { CantantesComponent } from '../cantantes/cantantes.component';
 
 @Component({
   selector: 'app-cantante-auto',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,CantantesComponent],
   template: `
+
+<app-cantantes/>
 
   <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque">
 

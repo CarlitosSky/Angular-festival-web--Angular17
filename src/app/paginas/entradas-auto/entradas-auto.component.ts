@@ -4,11 +4,12 @@ import { productos } from '../../common/productos';
 import { HttpClientModule,HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Productos1Component } from '../productos-1/productos-1.component';
 
 @Component({
   selector: 'app-entradas-auto',
   standalone: true,
-  imports: [CommonModule,RouterLink,RouterLinkActive],
+  imports: [CommonModule,RouterLink,RouterLinkActive,Productos1Component],
   templateUrl: './entradas-auto.component.html',
   styleUrl: './entradas-auto.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

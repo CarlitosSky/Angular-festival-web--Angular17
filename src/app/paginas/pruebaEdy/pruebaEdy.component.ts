@@ -3,16 +3,20 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DataService } from '../../data/data.service';
 import { DataEntradasService } from '../../data/data-entradas.service';
+import { EntradasComponent } from '../entradas/entradas.component';
 
 @Component({
   selector: 'app-prueba-edy',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,EntradasComponent],
   template: `
-    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque">
+
+
+<app-entradas/>
+    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque; margin-top:-100px" >
 
       <div class="col-sm-12 col-md-4" *ngFor="let e of entradas">
-        <div class="" style="height:230px; width:auto; overflow: hidden;">
+        <div class="" style="height:300px; width:auto; overflow: hidden;">
           <img [src]="e.imagen" class="card-img-top" alt="..." />
         </div>
         <div class="card- ps-3" style="padding-bottom: 50px;">
