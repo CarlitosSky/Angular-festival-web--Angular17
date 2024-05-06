@@ -16,10 +16,10 @@ import { EntradasComponent } from '../entradas/entradas.component';
     <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque; margin-top:-100px" >
 
       <div class="col-sm-12 col-md-4" *ngFor="let e of entradas">
-        <div class="" style="height:300px; width:auto; overflow: hidden;">
+        <div class="" style="height:300px; width:auto; overflow: hidden; padding-bottom:100px;">
           <img [src]="e.imagen" class="card-img-top" alt="..." />
         </div>
-        <div class="card- ps-3" style="padding-bottom: 50px;">
+        <div class="card- ps-3" style="padding-bottom: 100px;">
           <h4 class="card-title">{{ e.titulo }}</h4>
           <p class="card-text">{{ e.descripcion }}</p>
           <button class="btn-sm btn btn-primary">{{ e.botonTxt }}</button>
