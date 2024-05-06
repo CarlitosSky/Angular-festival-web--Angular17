@@ -4,16 +4,17 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { DataService } from '../../data/data.service';
 import { DataEntradasService } from '../../data/data-entradas.service';
 import { EntradasComponent } from '../entradas/entradas.component';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-prueba-edy',
   standalone: true,
-  imports: [CommonModule,EntradasComponent],
+  imports: [CommonModule,EntradasComponent,RouterLink,RouterLinkActive,RouterModule],
   template: `
 
 
 <app-entradas/>
-    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque; margin-top:-100px" >
+    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:#F4F6F7; margin-top:-100px" >
 
       <div class="col-sm-12 col-md-4" *ngFor="let e of entradas">
         <div class="" style="height:300px; width:auto; overflow: hidden; padding-bottom:100px;">
@@ -22,7 +23,7 @@ import { EntradasComponent } from '../entradas/entradas.component';
         <div class="card- ps-3" style="padding-bottom: 100px;">
           <h4 class="card-title">{{ e.titulo }}</h4>
           <p class="card-text">{{ e.descripcion }}</p>
-          <button class="btn-sm btn btn-primary">{{ e.botonTxt }}</button>
+          <button class="btn-sm btn btn-primary" routerLink="/productos">{{ e.botonTxt }}</button>
         </div>
       </div>
     </section>

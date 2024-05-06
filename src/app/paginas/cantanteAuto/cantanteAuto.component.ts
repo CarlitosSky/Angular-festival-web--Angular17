@@ -12,7 +12,7 @@ import { CantantesComponent } from '../cantantes/cantantes.component';
 
 <app-cantantes/>
 
-  <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:bisque">
+  <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:#F4F6F7">
 
       <div class="col-sm-12 col-md-4" *ngFor="let c of cantantes">
         <div class="" style="height:430px; width:auto; overflow: hidden;">

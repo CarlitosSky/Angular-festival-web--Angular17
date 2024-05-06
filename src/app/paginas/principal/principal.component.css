@@ -10,7 +10,7 @@
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
-    background-color: bisque;
+    background-color: #F4F6F7;
     padding: 30px;
 }
 .row-12 h1 {
