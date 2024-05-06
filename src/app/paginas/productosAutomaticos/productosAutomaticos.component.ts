@@ -23,7 +23,7 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
           <h4 class="card-title">{{p.Titulo}}</h4>
           <p class="card-title">{{p.descripcion}}</p>
           <p class="card-title"><strong> {{p.precio}} </strong></p>
-          <a href="#" class="btn btn-primary" routerLink="/productos" routerLinkActive="active">{{p.botonTxt}}</a>
+          <a href="#" class="btn btn-primary" routerLink="/carrito" routerLinkActive="active">{{p.botonTxt}}</a>
 
         </div>
       </div>
