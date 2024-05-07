@@ -25,7 +25,7 @@ import { TituProductosComponent } from '../titu-productos/titu-productos.compone
         <div class="text text-center " style="padding-bottom: 50px;">
           <h4 class="card-title">{{p.Titulo}}</h4>
           <p class="card-title" style="text-align: justify;">{{p.descripcion}}</p>
-          <p class="card-title"><strong> {{p.precio}} </strong></p>
+          <p class="card-title"><strong> {{p.precio}}€ </strong></p>
           <a href="#" class="btn btn-primary" routerLink="/carrito" routerLinkActive="active">{{p.botonTxt}}</a>
 
         </div>
