@@ -1,0 +1,31 @@
+
+
+<div class="content-fluid m-2 ">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <h2 style="padding-bottom: 80px;">Data Rick y Morty</h2>
+
+        </div>
+    </div>
+    <div class="row justify-content-space-around">
+        @for (personaje of personajesRyM.results; track personaje) {
+            <div class="col-3">
+                <div class="card" style="width: 18rem; margin-bottom: 50px;" [routerLink]="'/perone/' + personaje.id " routerLinkActive="active">
+                    <img src="{{personaje.image}}" class="card-img-top" alt="..." width="200px">
+                    <div class="card-body">
+                      <h5 class="card-title">{{personaje.name}}</h5>
+                      <p class="card-text">{{personaje.id}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">{{personaje.gender}}</li>
+
+
+
+                    </ul>
+                  </div>
+            </div>
+        }
+    </div>
+</div>
+
+

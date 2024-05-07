@@ -9,6 +9,8 @@ import { PagCarritoComponent } from './paginas/pag-carrito/pag-carrito.component
 import { PageNotFoundComponent } from './paginas/page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { RickyMortyComponent } from './paginas/ricky-morty/ricky-morty.component';
+import { PersonajeOneComponent } from './paginas/personaje-one/personaje-one.component';
 
 export const routes: Routes = [
     //Routes - NO
@@ -20,8 +22,8 @@ export const routes: Routes = [
     {path: "inicioSesion", title:"Inicia sesion",component: PagInicioSesionComponent},
     {path: "pago", title:"Metodo de pago",component: PagPagoComponent},
     {path: "carrito", title:"Tu carrito",component: PagCarritoComponent},
-
-
+    {path: 'perone/:id', component: PersonajeOneComponent},
+    {path: "api", title:"Api",component: RickyMortyComponent},
     //ULTIMAS RUTAS SIEMPRE
 
     {path: "**", component: PageNotFoundComponent}
