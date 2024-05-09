@@ -13,9 +13,6 @@ import { TituProductosComponent } from '../titu-productos/titu-productos.compone
         CommonModule,RouterLink,RouterLinkActive,TituProductosComponent
     ],
     template: `
-
-
-
     <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:#F4F6F7">
     <app-titu-productos/>
       <div class="col-sm-12 col-md-4" *ngFor="let p of productos">
@@ -26,8 +23,7 @@ import { TituProductosComponent } from '../titu-productos/titu-productos.compone
           <h4 class="card-title">{{p.Titulo}}</h4>
           <p class="card-title" style="text-align: justify;">{{p.descripcion}}</p>
           <p class="card-title"><strong> {{p.precio}}€ </strong></p>
-          <a href="#" class="btn btn-primary" routerLink="/carrito" routerLinkActive="active">{{p.botonTxt}}</a>
-
+          <a href="#" class="btn btn-primary" routerLink="/talla" routerLinkActive="active">{{p.botonTxt}}</a>
         </div>
       </div>
     </section>

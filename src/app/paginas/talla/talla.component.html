@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="text-center">Escoge tu talla</h2>
+    <p class="font-weight-bold">Talla de ropa:</p>
+    <select class="form-control mb-3">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+    <p class="font-weight-bold">Color:</p>
+    <select class="form-control mb-3">
+      <option>Negro</option>
+      <option>Azul</option>
+      <option>Rojo</option>
+      <option>Verde</option>
+      <option>Blanco</option>
+    </select>
+    <p class="font-weight-bold">Este producto talla más grande de lo habitual.</p>
+    <p>GUÍA DE MEDIDAS</p>
+    <button class="btn btn-primary btn-block" [routerLink]="'/pago'">Añadir al carrito</button>
+
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

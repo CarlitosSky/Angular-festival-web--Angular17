@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { RickyMortyComponent } from './paginas/ricky-morty/ricky-morty.component';
 import { PersonajeOneComponent } from './paginas/personaje-one/personaje-one.component';
+import { TallaComponent } from './paginas/talla/talla.component';
 
 export const routes: Routes = [
     //Routes - NO
@@ -22,6 +23,7 @@ export const routes: Routes = [
     {path: "inicioSesion", title:"Inicia sesion",component: PagInicioSesionComponent},
     {path: "pago", title:"Metodo de pago",component: PagPagoComponent},
     {path: "carrito", title:"Tu carrito",component: PagCarritoComponent},
+    {path: "talla", title:"Escoge tu talla",component: TallaComponent},
     {path: 'perone/:id', component: PersonajeOneComponent},
     {path: "api", title:"Api",component: RickyMortyComponent},
     //ULTIMAS RUTAS SIEMPRE
