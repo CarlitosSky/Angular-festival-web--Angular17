@@ -22,7 +22,7 @@ import { TituProductosComponent } from '../titu-productos/titu-productos.compone
         <div class="" style="height:430px; width:auto; overflow: hidden;">
           <img [src]="p.imagen" class="card-img-top" alt="...">
         </div>
-        <div class="text text-center " style="padding-bottom: 50px;">
+        <div class="text text-center " style="padding-bottom: 50px; padding-top:20px;">
           <h4 class="card-title">{{p.Titulo}}</h4>
           <p class="card-title" style="text-align: justify;">{{p.descripcion}}</p>
           <p class="card-title"><strong> {{p.precio}}€ </strong></p>

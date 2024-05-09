@@ -14,13 +14,13 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 
 <app-entradas/>
-    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:#F4F6F7; margin-top:-100px" >
+    <section class="d-flex justify-content-center align-items-center px-5 row"  style="background-color:#F4F6F7; margin-top:-60px" >
 
       <div class="col-sm-12 col-md-4" *ngFor="let e of entradas">
-        <div class="" style="height:300px; width:auto; overflow: hidden; padding-bottom:100px;">
+        <div class="" style="overflow: hidden; ">
           <img [src]="e.imagen" class="card-img-top" alt="..." />
         </div>
-        <div class="card- ps-3" style="padding-bottom: 100px;">
+        <div class="card- ps-3" style="padding-bottom: 100px; margin-top:-80px;">
           <h4 class="card-title">{{ e.titulo }}</h4>
           <p class="card-text">{{ e.descripcion }}</p>
           <button class="btn-sm btn btn-primary" routerLink="/productos">{{ e.botonTxt }}</button>

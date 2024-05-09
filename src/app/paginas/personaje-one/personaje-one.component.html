@@ -1,29 +1,18 @@
 <br><br><br><br>
 
-<div class="container-fluid mx-auto text-lg-start">
+<div class="container-fluid mx-auto text-lg-start" style="padding-bottom: 50px;">
     <div class="row justify-content-center">
         <div class="col-3">
-            <div class="card" style="width: 18rem; margin-top: 50px;">
+            <div class="card" style="width: 18rem; margin-top: 50px; ">
                 <img src="{{personajeOne.image}}" class="card-img-top" alt="..." width="200px">
                 <div class="card-body text-center">
                     <h5 class="card-title">{{personajeOne.name}}</h5>
-                    <p class="card-text">{{personajeOne.id}}</p>
-                </div>
+                    <p class="card-text">{{personajeOne.gender}}</p>
+
+                    <button class="btn btn-primary">Sublimar</button>
+                  </div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">{{personajeOne.gender}}</li>
-                    <li class="list-group-item">{{personajeOne.created}}</li>
-                    <li class="list-group-item">{{personajeOne.location.name}}</li>
-                    <li class="list-group-item">{{personajeOne.origin.name}}</li>
-                    <li class="list-group-item">
-                        <ul>
-                            @for (episodio of personajeOne.episode; track episodio) {
-                            <li>{{episodio}}</li>
-                            }
-                        </ul>
-                    </li>
-                    <li class="list-group-item">{{personajeOne.species}}</li>
-                    <li class="list-group-item">{{personajeOne.status}}</li>
-                    <li class="list-group-item">{{personajeOne.type}}</li>
+
                 </ul>
             </div>
         </div>
