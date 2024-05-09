@@ -23,10 +23,12 @@ export const routes: Routes = [
     {path: "inicioSesion", title:"Inicia sesion",component: PagInicioSesionComponent},
     {path: "pago", title:"Metodo de pago",component: PagPagoComponent},
     {path: "carrito", title:"Tu carrito",component: PagCarritoComponent},
-    {path: "talla", title:"Escoge tu talla",component: TallaComponent},
+    {path: "talla", title:"Tu talla",component: TallaComponent},
+
     {path: 'perone/:id', component: PersonajeOneComponent},
     {path: "api", title:"Api",component: RickyMortyComponent},
     //ULTIMAS RUTAS SIEMPRE
+
 
     {path: "**", component: PageNotFoundComponent}
 
