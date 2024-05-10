@@ -26,15 +26,15 @@ loadproductos(){
   this.dataService.getproductos().subscribe(
     {
       next: (data) =>{
-        console.log(data)
+
         this.products = data.products
         this.cdRef.detectChanges();
       },
       error: err => {
-        console.log(err)
+
       },
       complete: () =>{
-        console.log('completado')
+
       }
     }
   )
