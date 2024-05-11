@@ -13,6 +13,5 @@ export class DataService {
 
   getproductos(): Observable<any>{
     return this.http.get('/assets/data/data.json')
-   
   }
 }
