@@ -46,9 +46,9 @@ export class CantanteAutoComponent implements OnInit {
       if (res) {
         this.cantantes = res.cantantes;
         this.cdRef.detectChanges();
-        console.log('res :>> ', this.cantantes);
+
       } else {
-        console.log('error');
+
       }
     });
   }
