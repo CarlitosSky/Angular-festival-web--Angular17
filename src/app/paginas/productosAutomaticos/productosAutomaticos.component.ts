@@ -55,10 +55,8 @@ export class ProductosAutomaticosComponent implements OnInit {
         if (res) {
           this.productos = res.productos;
           this.cdRef.detectChanges();
-          console.log('res :>> ', this.productos);
-
         } else {
-          console.log('error');
+
         }
       }
     );

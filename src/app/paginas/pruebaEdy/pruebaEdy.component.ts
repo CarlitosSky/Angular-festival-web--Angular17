@@ -50,9 +50,8 @@ export class PruebaEdyComponent implements OnInit {
       if (res) {
         this.entradas = res.entradas;
         this.cdRef.detectChanges();
-        console.log('res :>> ', this.entradas);
       } else {
-        console.log('error');
+
       }
     });
   }

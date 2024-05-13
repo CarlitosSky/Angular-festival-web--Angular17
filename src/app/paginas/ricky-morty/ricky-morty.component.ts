@@ -16,7 +16,6 @@ export class RickyMortyComponent implements OnInit{
 
   personajesRyM!: RickyMorty;
   constructor(private apiService: APIServiceService){}
-
   ngOnInit(): void {
     this.loadpersonajesRyM();
   }
@@ -24,14 +23,11 @@ export class RickyMortyComponent implements OnInit{
     this.apiService.getPersonajesRyM().subscribe(
       {
         next: (data) =>{
-          console.log(data)
           this.personajesRyM = data
         },
         error: err => {
-          console.log(err)
         },
         complete: () =>{
-          console.log('completado')
         }
       }
     )
