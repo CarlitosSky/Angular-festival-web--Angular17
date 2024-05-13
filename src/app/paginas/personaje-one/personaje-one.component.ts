@@ -26,16 +26,13 @@ export class PersonajeOneComponent  implements OnInit{
       {
         next: (data) =>{
           if (data === null || data === undefined) {
-            console.error('data is null or undefined');
             return;
           }
           this.personajeOne = data;
         },
         error: err => {
-          console.log(err)
         },
         complete: () =>{
-          console.log('completado')
         }
       }
     )
